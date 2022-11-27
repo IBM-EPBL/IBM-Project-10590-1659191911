@@ -8,7 +8,7 @@ const UserDetails = () => {
   const [signUpDetails, setSignUpDetails] = signUpDetailsState;
   return (
     <div style={{ backgroundColor: "#001e3f"}}>
-      <div style={{ marginTop: "56px" }}>
+      <div>
       {!user && (
         <h3 className="text-center" style={{marginTop: "50px", color: "white"}}>
           <i>Please fill the below details to continue signing up</i>

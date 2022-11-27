@@ -266,7 +266,7 @@ const UserDetailsForm = () => {
 
       <div
         style={{
-          // width: "90%",
+          minHeight: "100vh",
           backgroundColor: "rgb(114,214,203)",
           
         }}
@@ -293,7 +293,7 @@ const UserDetailsForm = () => {
                 ref={ageRef}
               />
               {ageError && (
-                <i className="text-info">* {ageError}</i>
+                <i className="text-danger">* {ageError}</i>
               )}
             </Form.Group>
 
@@ -307,7 +307,7 @@ const UserDetailsForm = () => {
                 <option value="1">1</option>
               </Form.Select>
               {sexError && (
-                <i className="text-info">* {sexError}</i>
+                <i className="text-danger">* {sexError}</i>
               )}
             </Form.Group>
 
@@ -326,7 +326,7 @@ const UserDetailsForm = () => {
                 <option value="4">4</option>
               </Form.Select>
               {chestPainError && (
-                <i className="text-info">
+                <i className="text-danger">
                   * {chestPainError}
                 </i>
               )}
@@ -336,7 +336,7 @@ const UserDetailsForm = () => {
               <Form.Label>BP</Form.Label>
               <Form.Control type="number" placeholder="Enter BP" ref={bpRef} />
               {bpError && (
-                <i className="text-info">* {bpError}</i>
+                <i className="text-danger">* {bpError}</i>
               )}
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -347,7 +347,7 @@ const UserDetailsForm = () => {
                 ref={cholesterolRef}
               />
               {cholesterolError && (
-                <i className="text-info">
+                <i className="text-danger">
                   * {cholesterolError}
                 </i>
               )}
@@ -365,7 +365,7 @@ const UserDetailsForm = () => {
                 <option value="1">1</option>
               </Form.Select>
               {fbsError && (
-                <i className="text-info">* {fbsError}</i>
+                <i className="text-danger">* {fbsError}</i>
               )}
             </Form.Group>
 
@@ -380,7 +380,7 @@ const UserDetailsForm = () => {
                 <option value="2">2</option>
               </Form.Select>
               {ekgError && (
-                <i className="text-info">* {ekgError}</i>
+                <i className="text-danger">* {ekgError}</i>
               )}
             </Form.Group>
 
@@ -392,7 +392,7 @@ const UserDetailsForm = () => {
                 ref={maxHrRef}
               />
               {maxHrError && (
-                <i className="text-info">* {maxHrError}</i>
+                <i className="text-danger">* {maxHrError}</i>
               )}
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -408,7 +408,7 @@ const UserDetailsForm = () => {
                 <option value="1">1</option>
               </Form.Select>
               {exerciseAnginaError && (
-                <i className="text-info">
+                <i className="text-danger">
                   * {exerciseAnginaError}
                 </i>
               )}
@@ -423,7 +423,7 @@ const UserDetailsForm = () => {
                 ref={stDepressionRef}
               />
               {stDepressionError && (
-                <i className="text-info">
+                <i className="text-danger">
                   * {stDepressionError}
                 </i>
               )}
@@ -445,7 +445,7 @@ const UserDetailsForm = () => {
                 <option value="3">3</option>
               </Form.Select>
               {slopeOfStError && (
-                <i className="text-info">
+                <i className="text-danger">
                   * {slopeOfStError}
                 </i>
               )}
@@ -465,7 +465,7 @@ const UserDetailsForm = () => {
                 <option value="3">3</option>
               </Form.Select>
               {numberOfVesselsError && (
-                <i className="text-info">
+                <i className="text-danger">
                   * {numberOfVesselsError}
                 </i>
               )}
@@ -487,7 +487,7 @@ const UserDetailsForm = () => {
                 <option value="7">7</option>
               </Form.Select>
               {thalliumError && (
-                <i className="text-info">* {thalliumError}</i>
+                <i className="text-danger">* {thalliumError}</i>
               )}
             </Form.Group>
           </div>
